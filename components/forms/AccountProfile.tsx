@@ -50,7 +50,7 @@ const form = useForm({
     }
 })
 
-const handleImage = (e: ChangeEvent<HTMLInputElement>, fieldchange: (value: string) => void) => {
+const handleImage = (e: ChangeEvent<HTMLInputElement>, fieldChange: (value: string) => void) => {
     e.preventDefault()
 
     const fileReader = new FileReader()
@@ -64,7 +64,7 @@ const handleImage = (e: ChangeEvent<HTMLInputElement>, fieldchange: (value: stri
         fileReader.onload = async(event) => {
             const imageDataUrl = event.target?.result?.toString() || ''
 
-            fieldchange(imageDataUrl)
+            fieldChange(imageDataUrl)
         }
 
         fileReader.readAsDataURL(file)
