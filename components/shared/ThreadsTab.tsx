@@ -1,3 +1,4 @@
+
 import { fetchUserPosts } from "@/lib/actions/user.actions"
 import { redirect } from "next/navigation"
 import Threadcard from "../cards/ThreadCard"
