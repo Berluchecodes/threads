@@ -7,9 +7,10 @@ interface Props  {
     username: string
     imgUrl: string
     bio: String
+    type?: "User" | "Community"
 }
 
-const ProfileHeader = ({accountId, authUserId, name, username, imgUrl, bio
+const ProfileHeader = ({accountId, authUserId, name, username, imgUrl, bio, type
 }: Props) => {
     return (
         
